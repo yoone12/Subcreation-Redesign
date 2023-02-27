@@ -1,2 +1,46 @@
 @charset "utf-8";
 
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+li{
+    padding-right: .5em;
+}
+
+.navbar{
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+.subnav{
+    display: flex;
+}
+
+.subnav-right{
+    justify-content: right;
+    margin-right: 1em;
+}
+
+.subheader{
+    padding-top: 2em;
+}
+
+h1{
+    margin: 1em;
+}
+
+.affixlist{
+    flex-direction: column;
+}
+
+.affiximg{
+    display: flex;
+    flex-direction: row;
+}
