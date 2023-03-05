@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-.container-fluid{
-    background-color: #292929;
-    color: white;
-}
-
 ul{
     list-style: none;
     display: flex;
@@ -12,26 +7,6 @@ ul{
 
 li{
     padding-right: .5em;
-}
-
-.navbar{
-    background-color: #191919;
-    color: white;
-}
-
-.subnav{
-    display: flex;
-    justify-content: center;
-}
-
-.subnav-right{
-    justify-content: right;
-    margin-right: 1em;
-}
-
-.subheader{
-    padding-top: 2em;
-    justify-content: center;
 }
 
 .affixlist{
