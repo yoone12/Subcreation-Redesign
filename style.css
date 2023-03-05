@@ -54,8 +54,17 @@ h1{
     justify-content: center;
 }
 
+img{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    filter: drop-shadow(3px 3px 3px rgb(14, 14, 14));
+}
+
 .affiximg > img{
     padding-left: .5em;
+    width: 70px;
+    border: none;
 }
 
 .t_list{
