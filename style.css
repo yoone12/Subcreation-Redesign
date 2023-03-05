@@ -9,6 +9,10 @@ li{
     padding-right: .5em;
 }
 
+h1{
+    text-align: center;
+}
+
 .affixlist{
     flex-direction: column;
     padding-left: 0;
@@ -25,11 +29,17 @@ li{
     justify-content: center;
 }
 
+table{
+    border-width: 1px;
+    border-style: solid;
+}
+
 img{
     border-style: solid;
     border-color: white;
     border-width: 1px;
-    filter: drop-shadow(3px 3px 3px rgb(14, 14, 14));
+    filter: drop-shadow(3px 2px 3px rgb(14, 14, 14));
+    width: 62px;
 }
 
 .affiximg > img{
@@ -40,4 +50,24 @@ img{
 
 .t_list{
     min-width: 30%;
+}
+
+.tier-header-text{
+    position: absolute;
+    margin-top: -1.7em;
+    margin-left: .45em;
+}
+
+.tier-header-img{
+    width: 60px;
+    border: none;
+    filter: none;
+}
+
+th{
+    max-width: 40px;
+}
+
+td > a{
+    margin: .7em;
 }

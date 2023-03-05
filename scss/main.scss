@@ -7,4 +7,12 @@ $navbar-dark-active-color: #FF7A00;
 $navbar-dark-color: white;
 $navbar-dark-brand-color: white;
 
+$table-striped-bg: #3A3A3A;
+$table-bg: #303030;
+$table-border-width: 0px;
+$table-border-color: rgb(87, 87, 87);
+
+$table-cell-padding-y: 0;
+$table-cell-padding-x: 0;
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss"
