@@ -34,10 +34,6 @@ li{
     justify-content: center;
 }
 
-h1{
-    margin: 1em;
-}
-
 .affixlist{
     flex-direction: column;
     padding-left: 0;
