@@ -16,15 +16,25 @@ h1{
 /* Typography styling */
 
 .dsa{
-    font-size: .8em;
+    font-size: .75em;
     font-weight: 100;
+    margin-left: 4em;
+    margin-top: 3em;
 }
 
 .runs{
-    font-size: .9em;
+    font-size: .8em;
 }
 
 /**/
+
+/* T_head flexbox */
+
+.t_head{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5em;
+}
 
 .affixlist{
     flex-direction: column;
@@ -55,10 +65,36 @@ img{
     width: 62px;
 }
 
+/* Weekly affix styling */
 .affiximg > img{
     padding-left: .5em;
     width: 70px;
     border: none;
+}
+
+/* Tlist catgory icon styling */
+.t_head > img{
+    border: none;
+    filter: none;
+    margin-right: 1em;
+}
+
+.d_ease{
+    max-width: 32px;
+    max-height: 48px;
+    margin-top: .3em;
+}
+
+.tank{
+    max-width: 40px;
+    max-height: 48px;
+    margin-top: .2em;
+}
+
+.heal{
+    max-width: 43px;
+    max-height: 43px;
+    margin-top: .3em;
 }
 
 .t_list{
