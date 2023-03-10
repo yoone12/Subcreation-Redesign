@@ -121,3 +121,8 @@ th{
 td > a{
     margin: .7em;
 }
+
+.footer{
+    background-image: url(/assets/footer/footer-img.png);
+    padding: 1em;
+}
