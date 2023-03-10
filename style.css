@@ -13,6 +13,19 @@ h1{
     text-align: center;
 }
 
+/* Typography styling */
+
+.dsa{
+    font-size: .8em;
+    font-weight: 100;
+}
+
+.runs{
+    font-size: .9em;
+}
+
+/**/
+
 .affixlist{
     flex-direction: column;
     padding-left: 0;
