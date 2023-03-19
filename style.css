@@ -46,7 +46,7 @@ h4{
 .affixlist{
     flex-direction: column;
     padding-left: 0;
-    margin-left: 2.2em;
+    margin-left: 5.8em;
 }
 
 .affixtext{
@@ -173,4 +173,11 @@ table{
 .footer > p{
     font-weight: 300;
     font-size: .9em;
+}
+
+
+/* Dropdown nav styling */
+
+.top-build{
+    padding-left: .5em;
 }
