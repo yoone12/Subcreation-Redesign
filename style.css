@@ -57,11 +57,6 @@ h4{
     justify-content: center;
 }
 
-table{
-    border-width: 1px;
-    border-style: solid;
-}
-
 img{
     border-style: solid;
     border-color: white;
@@ -119,12 +114,24 @@ img{
     filter: none;
 }
 
+/* Table layout */
+
 th{
-    max-width: 40px;
+    width: 70px;
+}
+
+th h1{
+    text-align: left;
 }
 
 td > a{
     margin: .7em;
+}
+
+table{
+    border-width: 1px;
+    border-style: solid;
+    table-layout: fixed;
 }
 
 
