@@ -11,6 +11,8 @@ li{
 
 h1{
     text-align: center;
+    margin-right: 4em;
+    font-weight: bolder;
 }
 
 h4{
@@ -18,7 +20,6 @@ h4{
 }
 
 /* Typography styling */
-
 .dsa{
     font-size: .75em;
     font-weight: 100;
@@ -31,10 +32,11 @@ h4{
     font-style: italic;
 }
 
-/**/
+.p-thin{
+    font-weight: 300;
+}
 
 /* T_head flexbox */
-
 .t_head{
     display: flex;
     flex-direction: row;
@@ -44,11 +46,14 @@ h4{
 .affixlist{
     flex-direction: column;
     padding-left: 0;
+    margin-left: 2.2em;
 }
 
 .affixtext{
-    justify-content: center;
+    justify-content: right;
     padding-top: 1rem;
+    padding-left: 0;
+    text-align: center;
 }
 
 .affiximg{
@@ -67,8 +72,8 @@ img{
 
 /* Weekly affix styling */
 .affiximg > img{
-    padding-left: .5em;
-    width: 70px;
+    padding-left: 1em;
+    width: 85px;
     border: none;
 }
 
@@ -115,7 +120,6 @@ img{
 }
 
 /* Table layout */
-
 th{
     width: 70px;
 }
@@ -136,7 +140,6 @@ table{
 
 
 /* Footer styling */
-
 .footer{
     background-image: url(assets/footer/footer-img.png);
     padding: 2em;
