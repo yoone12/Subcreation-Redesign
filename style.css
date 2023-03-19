@@ -13,17 +13,22 @@ h1{
     text-align: center;
 }
 
+h4{
+    margin-bottom: 0;
+}
+
 /* Typography styling */
 
 .dsa{
     font-size: .75em;
     font-weight: 100;
-    margin-left: 4em;
+    margin-left: 5em;
     margin-top: 3em;
 }
 
 .runs{
     font-size: .8em;
+    font-style: italic;
 }
 
 /**/
@@ -122,7 +127,25 @@ td > a{
     margin: .7em;
 }
 
+
+/* Footer styling */
+
 .footer{
-    background-image: url(/assets/footer/footer-img.png);
-    padding: 1em;
+    background-image: url(assets/footer/footer-img.png);
+    padding: 2em;
+    margin-top: 3em;
+}
+
+.styled{
+    padding-left: 0;
+    margin-bottom: 2em;
+}
+
+.styled > li:nth-child(n + 2){
+    padding-left: 1.5em;
+}
+
+.footer > p{
+    font-weight: 300;
+    font-size: .9em;
 }
