@@ -102,6 +102,21 @@ img{
     margin-top: .3em;
 }
 
+.mdps{
+    max-width: 44px;
+    max-height: 48px;
+    margin-top: .3em;
+}
+
+.rdps{
+    max-width: 55px;
+    max-height: 50px;
+}
+
+.dsa-rdps{
+    margin-left: 4em;
+}
+
 .t_list{
     min-width: 30%;
 }
