@@ -11,7 +11,8 @@ li{
 
 h1{
     text-align: center;
-    margin-right: 4em;
+    margin-left: .2em;
+    margin-right: 3.8em;
     font-weight: bolder;
 }
 
@@ -186,4 +187,16 @@ table{
 
 .top-build{
     padding-left: .5em;
+}
+
+.dropdown-item > img{
+    max-width: 25px;
+    filter: none;
+    margin-right: .7em;
+    /* border: #FF7A00 solid 1px; */
+    border: none;
+}
+
+.dropdown-menu > li{
+    padding: 0;
 }
