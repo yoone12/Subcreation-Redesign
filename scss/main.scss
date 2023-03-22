@@ -2,10 +2,12 @@ $primary: #292929;
 $secondary: #FF7A00;
 $dark: #191919;
 $body-color: white;
+$link-color: #FF7A00;
 
 $navbar-dark-active-color: #FF7A00;
 $navbar-dark-color: white;
 $navbar-dark-brand-color: white;
+$navbar-dark-brand-hover-color: white;
 
 $table-striped-bg: #3A3A3A;
 $table-bg: #303030;
@@ -21,6 +23,5 @@ $font-family-base: 'Cairo', sans-serif;
 
 $tooltip-color:white;
 $tooltip-bg: #e17816;
-$tooltip-arrow-width: .6rem;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss"

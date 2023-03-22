@@ -68,8 +68,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #292929;
-  --bs-link-hover-color: #212121;
+  --bs-link-color: #FF7A00;
+  --bs-link-hover-color: #cc6200;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -4101,7 +4101,7 @@ textarea.form-control-lg {
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #FF7A00;
   --bs-navbar-brand-color: white;
-  --bs-navbar-brand-hover-color: #FF7A00;
+  --bs-navbar-brand-hover-color: white;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -5490,7 +5490,7 @@ textarea.form-control-lg {
   --bs-tooltip-bg: #e17816;
   --bs-tooltip-border-radius: 0.375rem;
   --bs-tooltip-opacity: 0.9;
-  --bs-tooltip-arrow-width: 0.6rem;
+  --bs-tooltip-arrow-width: 0.8rem;
   --bs-tooltip-arrow-height: 0.4rem;
   z-index: var(--bs-tooltip-zindex);
   display: block;
