@@ -71,11 +71,15 @@ h4{
 
 img{
     border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    filter: drop-shadow(3px 2px 3px rgb(14, 14, 14));
+    border-color: rgba(0,0,0,0);
+    border-width: .5px;
+    filter: drop-shadow(3px 2px 3px rgb(26, 26, 26));
     width: 62px;
     transition: filter 0.05s;
+}
+
+td img{
+    border-radius: 4px;
 }
 
 /* Weekly affix styling */
@@ -144,7 +148,10 @@ img{
 
 /* Tlist image hover */
 td img:hover{
-    filter: drop-shadow(0px 0px 7px rgb(169, 169, 169));
+    filter: drop-shadow(0px 0px 7px rgb(167, 167, 167));
+    border-style: solid;
+    border-color: rgb(168, 168, 168);
+    border-width: 1px;
 }
 
 /* Table layout */
