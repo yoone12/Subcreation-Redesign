@@ -23,7 +23,9 @@ h4{
 .faq{
     margin-right: .8em;
 }
-
+.main{
+    margin-top: .2em;
+}
 /* Typography styling */
 .dsa{
     font-size: .75em;
