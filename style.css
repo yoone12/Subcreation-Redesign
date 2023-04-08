@@ -230,15 +230,17 @@ table{
 .main-video{
     object-fit: fill;
     width: 100em;
-    opacity: 50%;
+/*     opacity: 50%; */
+    filter: brightness(30%);
 }
 
 .main-video:hover{
     opacity: 100%;
+/*     filter: brightness(80%); */
 }
 
 #mplus {
-    margin-left: -18em;
+    margin-left: -23em;
 }
 
 #raid {
@@ -267,6 +269,8 @@ table{
 .video-crop div{
     position: absolute;
     top: 50%;
+    z-index: 1;
+    color: white !important;
 }
 
 .mplus-text{

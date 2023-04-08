@@ -53,7 +53,7 @@
                     <h1 class="text-center">Mythic+</h1>
                     <h4 class="text-center">Season 1</h4>
                 </div>
-                <video class="main-video" id="mplus" muted autoplay>
+                <video class="main-video" id="mplus" muted  loop>
                     <source
                     src="assets/videos/Mythic Dungeon International _ Dragonflight 2023 Trailer.mp4"
                     type="video/mp4"
@@ -67,7 +67,7 @@
                     <h1 class="text-center">Vault of the Incarnates</h1>
                     <h4 class="text-center">Tier 29</h4>
                 </div>
-                <video class="main-video" id="raid" muted autoplay>
+                <video class="main-video" id="raid" muted loop>
                     <source
                     src="assets/videos/Echo x Vault of the Incarnates _ Race to World First Announcement Trailer _ WoW_ Dragonflight.mp4"
                     type="video/mp4"
@@ -81,7 +81,7 @@
                     <h1 class="text-center">Rated PvP</h1>
                     <h4 class="text-center">Season 1</h4>
                 </div>
-                <video class="main-video" id="pvp" muted autoplay>
+                <video class="main-video" id="pvp" muted loop>
                     <source
                     src="assets/videos/Dragonflight Grand Finals Animated Trailer _ AWC 2023.mp4"
                     type="video/mp4"
@@ -90,6 +90,23 @@
             </a>
         </div>
     </div>
+
+    <script>
+        var bound = document.getElementsByClassName(".video-crop");
+        const video = document.querySelectorAll('.main-video');
+        for (let i = 0; i<video.length; i++){
+            video[i].addEventListener('mouseenter',function(e){
+                video[i].play()
+            })
+            video[i].addEventListener('mouseout',function(e){
+                video[i].load()
+            })
+        }
+        
+    /*     function playVid(e){
+            video.play();
+        } */
+    </script> 
 
     <div class="footer index-ft"> <!-- Footer -->
         <nav>
