@@ -53,9 +53,9 @@
                     <h1 class="text-center">Mythic+</h1>
                     <h4 class="text-center">Season 1</h4>
                 </div>
-                <video class="main-video" id="mplus" muted  loop>
+                <video class="main-video" id="mplus" poster="assets/videos/mplus-poster.png" muted  loop>
                     <source
-                    src="assets/videos/Mythic Dungeon International _ Dragonflight 2023 Trailer.mp4"
+                    src="assets/videos/mplusvid.mp4"
                     type="video/mp4"
                     >
                 </video>
@@ -67,9 +67,9 @@
                     <h1 class="text-center">Vault of the Incarnates</h1>
                     <h4 class="text-center">Tier 29</h4>
                 </div>
-                <video class="main-video" id="raid" muted loop>
+                <video class="main-video" id="raid" poster="assets/videos/raid-poster.png" muted loop>
                     <source
-                    src="assets/videos/Echo x Vault of the Incarnates _ Race to World First Announcement Trailer _ WoW_ Dragonflight.mp4"
+                    src="assets/videos/raidvid.mp4"
                     type="video/mp4"
                     >
                 </video>
@@ -81,9 +81,9 @@
                     <h1 class="text-center">Rated PvP</h1>
                     <h4 class="text-center">Season 1</h4>
                 </div>
-                <video class="main-video" id="pvp" muted loop>
+                <video class="main-video" id="pvp" poster="assets/videos/pvp-poster.png" muted loop>
                     <source
-                    src="assets/videos/Dragonflight Grand Finals Animated Trailer _ AWC 2023.mp4"
+                    src="assets/videos/pvpvid.mp4"
                     type="video/mp4"
                     >
                 </video>
@@ -92,13 +92,13 @@
     </div>
 
     <script>
-        var bound = document.getElementsByClassName(".video-crop");
+        const bound = document.querySelectorAll(".video-crop");
         const video = document.querySelectorAll('.main-video');
         for (let i = 0; i<video.length; i++){
-            video[i].addEventListener('mouseenter',function(e){
+            bound[i].addEventListener('mouseenter',function(e){
                 video[i].play()
             })
-            video[i].addEventListener('mouseout',function(e){
+            bound[i].addEventListener('mouseout',function(e){
                 video[i].load()
             })
         }
