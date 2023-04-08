@@ -5,12 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subcreation</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- Import fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+<!-- Import Popperjs -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+<!-- Link to stylesheet -->    
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    <a href="mplus.html">
-        <h1>MYTHIC PLUS</h1>
-    </a>
+<body class="bg-primary">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark px-5 py-2"> <!-- Main nav -->
+        <a href="index.html" class="navbar-brand">
+            <h1 class="main">
+                <strong>SUBCREATION</strong>
+            </h1>
+        </a>
+        <ul class="hspacer navbar-nav mx-auto">
+            <li class="nav-item active">
+                <a href="mplus.html" class="nav-link">Mythic+</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://raid.subcreation.net/" class="nav-link">Vault of the Incarnates</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://pvp.subcreation.net/" class="nav-link">Rated PVP</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://subcreation.net/faq.html" class="nav-link faq">FAQ</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="video-container">
+        <div class="video-crop">
+            <a href="mplus.html">
+                <div class="mplus-text">
+                    <h1 class="text-center">Mythic+</h1>
+                    <h4 class="text-center">Season 1</h4>
+                </div>
+                <video class="main-video" id="mplus" muted autoplay>
+                    <source
+                    src="assets/videos/Mythic Dungeon International _ Dragonflight 2023 Trailer.mp4"
+                    type="video/mp4"
+                    >
+                </video>
+            </a>
+        </div>
+        <div class="video-crop">
+            <a href="https://raid.subcreation.net/">
+                <div class="raid-text">
+                    <h1 class="text-center">Vault of the Incarnates</h1>
+                    <h4 class="text-center">Tier 29</h4>
+                </div>
+                <video class="main-video" id="raid" muted autoplay>
+                    <source
+                    src="assets/videos/Echo x Vault of the Incarnates _ Race to World First Announcement Trailer _ WoW_ Dragonflight.mp4"
+                    type="video/mp4"
+                    >
+                </video>
+            </a>
+        </div>
+        <div class="video-crop">
+            <a href="https://pvp.subcreation.net/">
+                <div class="pvp-text">
+                    <h1 class="text-center">Rated PvP</h1>
+                    <h4 class="text-center">Season 1</h4>
+                </div>
+                <video class="main-video" id="pvp" muted autoplay>
+                    <source
+                    src="assets/videos/Dragonflight Grand Finals Animated Trailer _ AWC 2023.mp4"
+                    type="video/mp4"
+                    >
+                </video>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer index-ft"> <!-- Footer -->
+        <nav>
+            <ul class="styled">
+                <li><a href="https://discord.com/invite/X8dyq67">Discord</a></li>
+                <li><a href="https://github.com/alcaras/mplus.subcreation.net">GitHub</a></li>
+                <li><a href="https://twitter.com/subcreation/">Twitter</a></li>
+                <li><a href="https://www.patreon.com/bePatron?u=10541594">Patreon</a></li>
+                <li><a href="https://subcreation.net/privacy.html">Privacy</a></li>
+                <li><a href="https://subcreation.net/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <p><a href="index.html">Subcreation</a> provides statistical analysis of Mythic+ dungeons (via the <a href="https://raider.io/">raider.io</a> API), Raids, and PvP in World of Warcraft: Dragonflight and provides summaries of the top talents, gear, enchants, and gems used in Mythic+ and Raids (via the <a href="https://www.warcraftlogs.com/">Warcraft Logs</a> API). Item and ability tooltips by <a href="https://www.wowhead.com/">Wowhead</a>. All images copyright <a href="https://www.blizzard.com/en-us/">Blizzard Entertainment.</a></p>
+        <p>Subcreation updates every eight hours for top Mythic+ runs, every 24 hours for top talents, gear, enchants, and gems, for both raid and Mythic+, and every 24 hours for PvP statistics.</p>
+        <p>This page last updated: 2023-02-26 16:46:21.766916-05:00.</p>
+    </div>
 </body>
 </html>

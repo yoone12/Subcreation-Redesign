@@ -213,3 +213,70 @@ table{
 .dropdown-menu > li{
     padding: 0;
 }
+
+/* Video styling */
+
+.video-container{
+    max-width: 100%;
+    display: flex;
+}
+
+.video-crop{
+    width:  33.33%;
+    overflow: hidden;
+    fill: black;
+}
+
+.main-video{
+    object-fit: fill;
+    width: 100em;
+    opacity: 50%;
+}
+
+.main-video:hover{
+    opacity: 100%;
+}
+
+#mplus {
+    margin-left: -18em;
+}
+
+#raid {
+    margin-left: -25em;
+}
+
+#pvp {
+    margin-left: -20em;
+}
+
+.index-ft{
+    margin-top: -6px;
+}
+
+.video-crop h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: .1em;
+}
+
+.video-crop h4{
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.video-crop div{
+    position: absolute;
+    top: 50%;
+}
+
+.mplus-text{
+    margin-left: 16em;
+}
+
+.raid-text{
+    margin-left: 8em;
+}
+
+.pvp-text{
+    margin-left: 15em;
+}
