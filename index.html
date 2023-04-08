@@ -50,6 +50,9 @@
         <div class="video-crop">
             <a href="mplus.html">
                 <div class="mplus-text">
+                    <span class="shadow2">
+                        <img src="assets/category-icons/mplus-icon.png" alt="Mythic+ Icon" class="mplus-icon">
+                    </span>
                     <h1 class="text-center">Mythic+</h1>
                     <h4 class="text-center">Season 1</h4>
                 </div>
@@ -64,6 +67,9 @@
         <div class="video-crop">
             <a href="https://raid.subcreation.net/">
                 <div class="raid-text">
+                    <span class="shadow2">
+                        <img src="assets/category-icons/raid-icon.png" alt="Raid Icon" class="raid-icon">
+                    </span>
                     <h1 class="text-center">Vault of the Incarnates</h1>
                     <h4 class="text-center">Tier 29</h4>
                 </div>
@@ -78,6 +84,9 @@
         <div class="video-crop">
             <a href="https://pvp.subcreation.net/">
                 <div class="pvp-text">
+                    <span class="shadow2">
+                        <img src="assets/category-icons/pvp-icon.png" alt="PvP Icon" class="pvp-icon">
+                    </span>
                     <h1 class="text-center">Rated PvP</h1>
                     <h4 class="text-center">Season 1</h4>
                 </div>
@@ -95,17 +104,24 @@
         const bound = document.querySelectorAll(".video-crop");
         const video = document.querySelectorAll('.main-video');
         for (let i = 0; i<video.length; i++){
-            bound[i].addEventListener('mouseenter',function(e){
+            video[i].addEventListener('mouseenter',function(e){
                 video[i].play()
             })
-            bound[i].addEventListener('mouseout',function(e){
+            video[i].addEventListener('mouseout',function(e){
                 video[i].load()
             })
         }
-        
-    /*     function playVid(e){
-            video.play();
-        } */
+
+        // const bound = document.querySelectorAll(".video-crop");
+        // const video = document.querySelectorAll('.main-video');
+        // for (let i = 0; i<video.length; i++){
+        //     bound[i].addEventListener('mouseenter',function(e){
+        //         video[i].play()
+        //     })
+        //     bound[i].addEventListener('mouseout',function(e){
+        //         video[i].load()
+        //     })
+        // }
     </script> 
 
     <div class="footer index-ft"> <!-- Footer -->
