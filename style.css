@@ -229,13 +229,12 @@ table{
 .main-video{
     object-fit: fill;
     width: 100em;
-    filter: brightness(30%);
-    z-index: inherit;
+    filter: brightness(38%);
 }
 
 .main-video:hover{
     opacity: 100%;
-    filter: brightness(50%);
+    filter: brightness(55%);
 }
 
 #mplus {
