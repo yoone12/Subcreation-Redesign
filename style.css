@@ -236,19 +236,19 @@ table{
 
 .main-video:hover{
     opacity: 100%;
-/*     filter: brightness(80%); */
+    filter: brightness(50%);
 }
 
 #mplus {
-    margin-left: -23em;
+    margin-left: -28em;
 }
 
 #raid {
-    margin-left: -25em;
+    margin-left: -30em;
 }
 
 #pvp {
-    margin-left: -20em;
+    margin-left: -27em;
 }
 
 .index-ft{
