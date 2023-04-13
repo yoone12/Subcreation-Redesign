@@ -48,7 +48,7 @@
 
     <div class="video-container">
         <div class="video-crop">
-            <a href="mplus.html">
+            <a href="mplus.html" class="bound">
                 <div class="mplus-text">
                     <span class="shadow2">
                         <img src="assets/category-icons/mplus-icon.png" alt="Mythic+ Icon" class="mplus-icon">
@@ -65,7 +65,7 @@
             </a>
         </div>
         <div class="video-crop">
-            <a href="https://raid.subcreation.net/">
+            <a href="https://raid.subcreation.net/" class="bound">
                 <div class="raid-text">
                     <span class="shadow2">
                         <img src="assets/category-icons/raid-icon.png" alt="Raid Icon" class="raid-icon">
@@ -82,7 +82,7 @@
             </a>
         </div>
         <div class="video-crop">
-            <a href="https://pvp.subcreation.net/">
+            <a href="https://pvp.subcreation.net/" class="bound">
                 <div class="pvp-text">
                     <span class="shadow2">
                         <img src="assets/category-icons/pvp-icon.png" alt="PvP Icon" class="pvp-icon">
@@ -112,18 +112,30 @@
         //     })
         // }
 
-        const bound = document.querySelectorAll(".video-crop");
-        for (let i = 0; i < bound.length; i++) {
-            bound[i].addEventListener('mouseover', function (e) {
-                let video = bound[i].querySelectorAll('.main-video')[0];
-                video.play();
-                console.log("video mouseover");
-            });
-            bound[i].addEventListener('mouseout', function (e) {
-                let video = bound[i].querySelectorAll('.main-video')[0];
-                video.pause();
-                console.log("video mouseout");
-            });
+        /* const bound = document.querySelectorAll(".video-crop");
+        const video = document.querySelectorAll('.main-video');
+        for (let i = 0; i<video.length; i++){
+            bound[i].addEventListener('mouseenter',function(e){
+                video[i].play()
+            })
+            bound[i].addEventListener('mouseout',function(e){
+                video[i].load()
+            })
+        } */
+            const bound = document.querySelectorAll(".bound");
+            // const video = document.querySelectorAll('.main-video');
+            for (let i = 0; i < bound.length; i++){
+                bound[i].addEventListener('mouseover', function (e) {
+                    let video = bound[i].querySelectorAll('.main-video')[0];
+                    video.play();
+                    console.log("video mouseover");
+                });
+                bound[i].addEventListener('mouseleave', function (e) {
+                    let video = bound[i].querySelectorAll('.main-video')[0];
+                    video.load();
+                    console.log("video mouseout");
+            })
+            };
     </script> 
 
     <div class="footer index-ft"> <!-- Footer -->
