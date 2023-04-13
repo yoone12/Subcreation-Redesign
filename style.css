@@ -321,5 +321,5 @@ table{
 /* Over-video items drop shadow */
 
 .video-crop h1,h4{
-    filter: drop-shadow(0 0 10px #000);
+    filter: drop-shadow(4px 4px 4px #000);
 }
