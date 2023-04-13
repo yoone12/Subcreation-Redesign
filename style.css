@@ -230,11 +230,7 @@ table{
     object-fit: fill;
     width: 100em;
     filter: brightness(38%);
-}
-
-.main-video:hover{
-    opacity: 100%;
-    filter: brightness(55%);
+    z-index: 0;
 }
 
 #mplus {
@@ -251,6 +247,12 @@ table{
 
 .index-ft{
     margin-top: -6px;
+}
+
+/* Hover styling */
+
+.video-crop:hover .main-video{
+    filter: brightness(60%);
 }
 
 /* Over-video header text */
