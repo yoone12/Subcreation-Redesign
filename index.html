@@ -101,27 +101,29 @@
     </div>
 
     <script>
-        const bound = document.querySelectorAll(".video-crop");
-        const video = document.querySelectorAll('.main-video');
-        for (let i = 0; i<video.length; i++){
-            video[i].addEventListener('mouseenter',function(e){
-                video[i].play()
-            })
-            video[i].addEventListener('mouseout',function(e){
-                video[i].load()
-            })
-        }
-
         // const bound = document.querySelectorAll(".video-crop");
         // const video = document.querySelectorAll('.main-video');
         // for (let i = 0; i<video.length; i++){
-        //     bound[i].addEventListener('mouseenter',function(e){
+        //     video[i].addEventListener('mouseenter',function(e){
         //         video[i].play()
         //     })
-        //     bound[i].addEventListener('mouseout',function(e){
+        //     video[i].addEventListener('mouseout',function(e){
         //         video[i].load()
         //     })
         // }
+
+        const bound = document.querySelectorAll(".video-crop");
+        for (let i = 0; i < bound.length; i++) {
+            bound[i].addEventListener('mouseover', function (e) {
+                let video = bound[i].querySelectorAll('.main-video')[0];
+                video.play();
+                console.log("video mouseover");
+            });
+            bound[i].addEventListener('mouseout', function (e) {
+                let video = bound[i].querySelectorAll('.main-video')[0];
+                video.pause();
+                console.log("video mouseout");
+            });
     </script> 
 
     <div class="footer index-ft"> <!-- Footer -->
