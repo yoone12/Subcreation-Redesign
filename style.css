@@ -229,7 +229,7 @@ table{
 .main-video{
     object-fit: fill;
     width: 100em;
-    filter: brightness(38%);
+    filter: brightness(50%);
     z-index: 0;
 }
 
@@ -252,7 +252,7 @@ table{
 /* Hover styling */
 
 .video-crop:hover .main-video{
-    filter: brightness(60%);
+    filter: brightness(75%);
 }
 
 /* Over-video header text */
