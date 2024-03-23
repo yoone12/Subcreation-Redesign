@@ -178,13 +178,11 @@ table{
     margin-top: 3em;
 }
 
-.styled{
+.socials{
     padding-left: 0;
     margin-bottom: 2em;
-}
-
-.styled > li:nth-child(n + 2){
-    padding-left: 1.5em;
+    flex-wrap: wrap;
+    gap: 1em 1.5em;
 }
 
 .footer > p{
