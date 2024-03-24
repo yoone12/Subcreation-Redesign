@@ -211,6 +211,7 @@ table{
 .video-container{
     max-width: 100%;
     display: flex;
+    margin-bottom: -6px;
 }
 
 .video-crop{
@@ -220,26 +221,28 @@ table{
 }
 
 .main-video{
-    object-fit: fill;
+    object-fit: cover;
     width: 100em;
     filter: brightness(50%);
     z-index: 0;
 }
 
+.index-ft{
+    margin-top: 0px;
+}
+
+/* Center videos as viewport width changes */
+
 #mplus {
-    margin-left: -28em;
+    margin-left: calc(-45em + 14vw);
 }
 
 #raid {
-    margin-left: -30em;
+    margin-left: calc(-45em + 14vw)
 }
 
 #pvp {
-    margin-left: -27em;
-}
-
-.index-ft{
-    margin-top: -6px;
+    margin-left: calc(-45em + 14vw);
 }
 
 /* Hover styling */
@@ -292,7 +295,7 @@ table{
     filter: drop-shadow(0 0 18px #ff732d);
 }
 
-/* Over-video items drop shadow */
+/* Over-video text drop shadow */
 
 .video-crop h1,h4{
     filter: drop-shadow(4px 4px 4px #000);
