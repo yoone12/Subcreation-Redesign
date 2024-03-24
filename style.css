@@ -9,10 +9,6 @@ li{
     padding-right: .5em;
 }
 
-h1{
-     margin-left: .2em;
-}
-
 h4{
     margin-bottom: 0;
 }
@@ -22,6 +18,7 @@ h4{
 }
 .main{
     margin-top: .2em;
+    margin-left: 48px;
 }
 /* Typography styling */
 .dsa{
@@ -304,17 +301,29 @@ table{
 /* Navbar styling */
 
 .pgnav{
-    margin: 0 auto;
+    justify-content: center;
 }
 
 .utilnav{
-    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.utilnav li:nth-of-type(n+2){
+    margin-right: 48px;
+}
+
+.navbar-brand{
+    margin-right: 0 !important;
+}
+
+.navbar-brand, .utilnav, .pgnav{
+    flex: 1 1;
 }
 
 /* --Responsiveness-- */
 
 /* Breakpoint1000 */
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1055px){
     /* Navbar */
     .navbar{
         flex-wrap: wrap !important;
@@ -325,7 +334,9 @@ table{
     }
 
     .pgnav{
-        margin: 0;
+        margin-left: 40px; /* Accounting for 8px left padding from li */
+        justify-content: flex-start;
+        flex-basis: 50%;
     }
 
     .main{
@@ -342,6 +353,8 @@ table{
 
     .utilnav{
         flex-direction: row !important;
+        margin-left: 40px; /* Accounting for 8px left padding from li */
+
     }
 
     .pgnav{
@@ -352,10 +365,6 @@ table{
         margin-bottom: 8px;
     }
     
-    .utilnav{
-        margin-left: 0;
-    }
-
     .navbar .pgnav a, .navbar .utilnav a{
         padding-left: 8px !important;
         padding-right: 8px !important;
@@ -364,7 +373,6 @@ table{
     /* Behavior for index only */
     .ind-pgnav{
         display: none !important;
-        align-items: center !important;
     }
 
     .ind-navbar{
@@ -376,7 +384,7 @@ table{
     }
 
     .ind-utilnav{
-        justify-content: center;
+        justify-content: flex-start;
         margin-top: auto;
         margin-bottom: auto !important;
     }
