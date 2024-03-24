@@ -233,15 +233,7 @@ table{
 
 /* Center videos as viewport width changes */
 
-#mplus {
-    margin-left: calc(-45em + 14vw);
-}
-
-#raid {
-    margin-left: calc(-45em + 14vw)
-}
-
-#pvp {
+.main-video {
     margin-left: calc(-45em + 14vw);
 }
 
@@ -278,11 +270,14 @@ table{
     align-items: center;
 }
 
-
 /* Over-video icons */
 
 .raid-icon{
     filter: drop-shadow(0 0 15px #ff8447);
+}
+
+.raid-text .shadow2{
+    padding: 9px;
 }
 
 .mplus-icon{
@@ -325,8 +320,9 @@ table{
 
 /* --Responsiveness-- */
 
-/* Breakpoint1000 */
+/* Breakpoint 1055px */
 @media screen and (max-width: 1055px){
+
     /* Navbar */
     .navbar{
         flex-wrap: wrap !important;
@@ -347,8 +343,36 @@ table{
     }
 }
 
+/* Breakpoint 750px */
+@media screen and (max-width: 750px){
+
+    /* Videos */
+    .video-container{
+        flex-direction: column;
+        max-height: calc(100vh - 100px);
+    }
+
+    .main-video{
+        margin-top: -10em;
+        margin-left: calc(-45em + 48vw);
+    }
+
+    .video-crop div{
+        flex-flow: row;
+        column-gap: 1em;
+        width: 70vw;
+        justify-content: space-between;
+    }
+
+    .video-crop div h4{
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+}
+
 /* Breakpoint 590px */
 @media screen and (max-width: 590px){
+    /* Navbar */
     .navbar{
         flex-direction: column;
         align-items: flex-start !important;
@@ -371,6 +395,11 @@ table{
     .navbar .pgnav a, .navbar .utilnav a{
         padding-left: 8px !important;
         padding-right: 8px !important;
+    }
+
+    /* Videos */
+    .video-container{
+        max-height: calc(100vh - 59px);
     }
 
     /* Behavior for index only */
