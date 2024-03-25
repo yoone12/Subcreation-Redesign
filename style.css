@@ -84,6 +84,7 @@ td img{
 }
 
 /* Tlist catgory icon styling */
+/* Tlist category icon styling */
 .t_head > img{
     border: none;
     filter: none;
@@ -321,7 +322,7 @@ table{
 /* --Responsiveness-- */
 
 /* Breakpoint 1055px */
-@media screen and (max-width: 1055px){
+@media screen and (max-width: 1070px){
 
     /* Navbar */
     .navbar{
