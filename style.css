@@ -47,10 +47,10 @@ h4{
 .affixlist{
     flex-direction: column;
     padding-left: 0;
+    align-items: center;
 }
 
 .affixtext{
-    justify-content: center;
     padding-top: 1rem;
     padding-left: 0;
     text-align: center;
@@ -59,7 +59,6 @@ h4{
 .affiximg{
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 img{
@@ -77,11 +76,15 @@ td img{
 
 /* Affix nav / secondary nav styling */
 
-.affixnav > ul:nth-of-type(1) > li:nth-of-type(1){ 
+.affixnav{
+    margin: 1.5rem 0;
+}
+
+.aff-subnav1 > li:nth-of-type(1){ 
     margin-left: 48px;
 }
 
-.affixnav > ul:nth-of-type(3) > li:nth-of-type(5){
+.aff-subnav2 > li:nth-of-type(5){
     margin-right: 48px;
 }
 
@@ -89,7 +92,7 @@ td img{
     flex: 1 1;
 }
 
-.affixnav > ul:nth-of-type(3){
+.aff-subnav2{
     justify-content: flex-end;
 }
 
@@ -337,7 +340,47 @@ table{
 
 /* --Responsiveness-- */
 
-/* Breakpoint 1055px */
+/* Breakpoint 1430 */
+@media screen and (max-width: 1430px){
+
+    /* Affix nav */
+    .affixnav{
+        display: grid !important;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "Nav weeklies"
+        "Nav2 weeklies2"
+        ;
+    }
+
+    .aff-imgs{
+        grid-row-start: weeklies;
+        grid-row-end: span weeklies2;
+        grid-column-start: weeklies;
+    }
+
+    .aff-subnav1{
+        align-self: end;
+    }
+
+    .aff-subnav2{
+        justify-content: flex-start;
+        margin-left: 48px;
+        align-self: start;
+    }
+
+    .affixlist{
+        align-items: flex-end;
+        margin-right: 48px;
+    }
+
+    .affixnav p{
+        margin-bottom: 0;
+    }
+}
+
+/* Breakpoint 1070px */
 @media screen and (max-width: 1070px){
 
     /* Navbar */
@@ -357,6 +400,32 @@ table{
 
     .main{
         margin-bottom: 0;
+    }
+}
+
+/* Breakpoint 910 */
+@media screen and (max-width: 910px){
+
+    /* Affix nav */
+    .affixnav{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-areas:
+        "nav1"
+        "nav2"
+        "weeklies"
+        ;
+        margin: 0;
+    }
+
+    .affixlist{
+        align-items: flex-start;
+        margin-left: 48px;
+        margin-top: 8px;
+    }
+
+    .my-4{
+        margin: 0 !important;
     }
 }
 
@@ -389,6 +458,7 @@ table{
 
 /* Breakpoint 590px */
 @media screen and (max-width: 590px){
+    
     /* Navbar */
     .navbar{
         flex-direction: column;
@@ -403,6 +473,7 @@ table{
 
     .pgnav{
         order: 3;
+        flex-flow: row wrap !important;
     }
     
     .navbar-brand{
@@ -412,6 +483,24 @@ table{
     .navbar .pgnav a, .navbar .utilnav a{
         padding-left: 8px !important;
         padding-right: 8px !important;
+    }
+
+    /* Affix nav */
+    .aff-subnav1{
+        margin-left: 48px;
+        flex-flow: row wrap !important;
+    }
+
+    .aff-subnav1 li{
+        margin-left: 0;
+    }
+
+    .aff-subnav1 > li:nth-of-type(1){ 
+        margin-left: 0px;
+    }
+
+    .aff-subnav2{
+        flex-flow: row wrap !important;
     }
 
     /* Videos */
