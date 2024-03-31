@@ -47,11 +47,10 @@ h4{
 .affixlist{
     flex-direction: column;
     padding-left: 0;
-    margin-left: 5.8em;
 }
 
 .affixtext{
-    justify-content: right;
+    justify-content: center;
     padding-top: 1rem;
     padding-left: 0;
     text-align: center;
@@ -76,6 +75,24 @@ td img{
     border-radius: 4px;
 }
 
+/* Affix nav / secondary nav styling */
+
+.affixnav > ul:nth-of-type(1) > li:nth-of-type(1){ 
+    margin-left: 48px;
+}
+
+.affixnav > ul:nth-of-type(3) > li:nth-of-type(5){
+    margin-right: 48px;
+}
+
+.affixnav ul{
+    flex: 1 1;
+}
+
+.affixnav > ul:nth-of-type(3){
+    justify-content: flex-end;
+}
+
 /* Weekly affix styling */
 .affiximg > img{
     padding-left: 1em;
@@ -83,7 +100,10 @@ td img{
     border: none;
 }
 
-/* Tlist catgory icon styling */
+.affiximg > img:nth-of-type(1){
+    margin-left: -1em;
+}
+
 /* Tlist category icon styling */
 .t_head > img{
     border: none;
@@ -118,10 +138,6 @@ td img{
 .rdps{
     max-width: 55px;
     max-height: 50px;
-}
-
-.dsa-rdps{
-    margin-left: 4em;
 }
 
 .t_list{
