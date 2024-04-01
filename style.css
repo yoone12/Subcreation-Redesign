@@ -16,6 +16,7 @@ h4{
 .faq{
     margin-right: .8em;
 }
+
 .main{
     margin-top: .2em;
     margin-left: 48px;
@@ -163,6 +164,10 @@ td img:hover{
 }
 
 /* Table layout */
+.body{
+    align-items: start;
+}
+
 th{
     width: 70px;
 }
@@ -399,6 +404,11 @@ table{
     .main{
         margin-bottom: 0;
     }
+
+    /* Tierlist Tables */
+    .body > div{
+        flex-basis: 50%;
+    }
 }
 
 /* Breakpoint 910 */
@@ -424,6 +434,11 @@ table{
 
     .my-4{
         margin: 0 !important;
+    }
+
+    /* Tierlist Tables */
+    .body > div{
+        flex-basis: 100%;
     }
 }
 
