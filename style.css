@@ -292,10 +292,19 @@ table{
     margin-left: calc(-45em + 14vw);
 }
 
-/* Hover styling */
+/* Hover and Focus styling */
 
 .video-crop:hover .main-video{
     filter: brightness(75%);
+}
+
+.video-crop > a:focus .main-video{
+    filter: brightness(80%);
+}
+
+.video-crop > a:focus div{
+    border: solid white 2px;
+    border-radius: 5px;
 }
 
 /* Over-video header text */
