@@ -382,6 +382,19 @@ table{
     flex: 1 1;
 }
 
+/* Navbar Keyboard navigation */
+.skip-link{
+    position: absolute;
+    transform: translateY(-300%);
+    left: 50px;
+    background-color: #292929;
+    padding: 0.5em;
+}
+
+.skip-link:focus{
+    transform: translateY(0%);
+}
+
 /* --Responsiveness-- */
 
 /* Breakpoint 1430 */
@@ -527,7 +540,6 @@ table{
     }
 
     .pgnav{
-        order: 3;
         flex-flow: row wrap !important;
     }
     
