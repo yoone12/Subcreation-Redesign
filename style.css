@@ -414,10 +414,6 @@ table{
         margin-bottom: 0;
     }
 
-    /* Tierlist Tables */
-    .body > div:nth-child(n+4){
-        flex-basis: 50%;
-    }
 }
 
 /* Breakpoint 1070px */
