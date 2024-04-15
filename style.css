@@ -198,6 +198,7 @@ td img:hover{
 .body{
     align-items: start;
     max-width: 100%;
+    padding: 0 48px;
 }
 
 td{
@@ -397,8 +398,8 @@ table{
 
 /* --Responsiveness-- */
 
-/* Breakpoint 1430 */
-@media screen and (max-width: 1430px){
+/* Breakpoint 1550 */
+@media screen and (max-width: 1550px){
 
     /* Affix nav */
     .affixnav{
@@ -472,7 +473,7 @@ table{
     /* Affix nav */
     .affixnav{
         grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1.5fr;
         grid-template-areas:
         "nav1"
         "nav2"
@@ -533,28 +534,36 @@ table{
         align-items: flex-start !important;
     }
 
+    .main{
+        margin-left: 24px;
+    }
+
     .utilnav{
         flex-direction: row !important;
-        margin-left: 40px; /* Accounting for 8px left padding from li */
+        margin-left: 16px; /* Accounting for 8px left padding from li */
+    }
 
+    .utilnav li:nth-of-type(n+2){
+        margin-right: 0px;
     }
 
     .pgnav{
         flex-flow: row wrap !important;
+        margin-left: 16px;
     }
     
-    .navbar-brand{
-        margin-bottom: 8px;
-    }
-    
-    .navbar .pgnav a, .navbar .utilnav a{
-        padding-left: 8px !important;
-        padding-right: 8px !important;
+    .navbar .pgnav a, .navbar .utilnav a, .nav-item{
+        padding-left: 4px !important;
+        padding-right: 4px !important;
     }
 
     /* Affix nav */
+    .affixnav {
+        grid-template-columns: 100%;
+    }
+
     .aff-subnav1{
-        margin-left: 48px;
+        margin-left: 24px;
         flex-flow: row wrap !important;
     }
 
@@ -564,15 +573,36 @@ table{
 
     .aff-subnav1 > li:nth-of-type(1){ 
         margin-left: 0px;
+        flex-basis: 100%;
     }
 
     .aff-subnav2{
         flex-flow: row wrap !important;
+        margin-left: 24px;
+        padding-bottom: 8px;
+    }
+
+    .aff-subnav2 > li:nth-of-type(1){
+        flex-basis: 100%;
+    }
+
+    .affixlist{
+        margin-left: 24px;
     }
 
     /* Videos */
     .video-container{
         max-height: calc(100vh - 59px);
+    }
+
+    /* Body padding */
+    .body{
+        padding-left: 24px;
+        padding-right: 0px;
+    }
+    
+    .body div:nth-of-type(1){
+        margin-top: 8px;
     }
 
     /* Behavior for index only */
@@ -590,7 +620,7 @@ table{
 
     .ind-utilnav{
         justify-content: flex-start;
-        margin-top: auto;
-        margin-bottom: auto !important;
+        margin-bottom: auto;
+        margin-top: 0.5em;
     }
 }
