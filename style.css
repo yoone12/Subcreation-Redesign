@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+/* Global variables */
+:root{
+    --spacing-lg: 48px;
+    --spacing-md: 32px;
+    --spacing-sm: 24px;
+}
+
 ul{
     list-style: none;
     display: flex;
@@ -13,13 +20,10 @@ h4{
     margin-bottom: 0;
 }
 
-.faq{
-    margin-right: .8em;
-}
 
 .main{
     margin-top: .2em;
-    margin-left: 48px;
+    margin-left: var(--spacing-lg);
 }
 
 /* Typography styling */
@@ -72,15 +76,15 @@ td img{
 /* Affix nav / secondary nav styling */
 
 .affixnav{
-    margin: 1.5rem 0;
+    margin: var(--spacing-sm) 0;
 }
 
 .aff-subnav1 > li:nth-of-type(1){ 
-    margin-left: 48px;
+    margin-left: var(--spacing-lg);
 }
 
 .aff-subnav2 > li:nth-of-type(5){
-    margin-right: 48px;
+    margin-right: var(--spacing-lg);
 }
 
 .affixnav ul{
@@ -198,7 +202,7 @@ td img:hover{
 .body{
     align-items: start;
     max-width: 100%;
-    padding: 0 48px;
+    padding: 0 var(--spacing-lg);
 }
 
 td{
@@ -223,13 +227,13 @@ table{
 /* Footer styling */
 .footer{
     background-image: url(assets/footer/footer-img.png);
-    padding: 2em;
-    margin-top: 3em;
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-lg);
 }
 
 .socials{
     padding-left: 0;
-    margin-bottom: 2em;
+    margin-bottom: var(--spacing-md);
     flex-wrap: wrap;
     gap: 1em 1.5em;
 }
@@ -372,7 +376,7 @@ table{
 }
 
 .utilnav li:nth-of-type(n+2){
-    margin-right: 48px;
+    margin-right: var(--spacing-lg);
 }
 
 .navbar-brand{
@@ -424,13 +428,13 @@ table{
 
     .aff-subnav2{
         justify-content: flex-start;
-        margin-left: 48px;
+        margin-left: var(--spacing-lg);
         align-self: start;
     }
 
     .affixlist{
         align-items: flex-end;
-        margin-right: 48px;
+        margin-right: var(--spacing-lg);
     }
 
     .affixnav p{
@@ -484,7 +488,7 @@ table{
 
     .affixlist{
         align-items: flex-start;
-        margin-left: 48px;
+        margin-left: var(--spacing-lg);
         margin-top: 8px;
     }
 
@@ -535,7 +539,7 @@ table{
     }
 
     .main{
-        margin-left: 24px;
+        margin-left: var(--spacing-sm);
     }
 
     .utilnav{
@@ -563,7 +567,7 @@ table{
     }
 
     .aff-subnav1{
-        margin-left: 24px;
+        margin-left: var(--spacing-sm);
         flex-flow: row wrap !important;
     }
 
@@ -578,7 +582,7 @@ table{
 
     .aff-subnav2{
         flex-flow: row wrap !important;
-        margin-left: 24px;
+        margin-left: var(--spacing-sm);
         padding-bottom: 8px;
     }
 
@@ -587,7 +591,7 @@ table{
     }
 
     .affixlist{
-        margin-left: 24px;
+        margin-left: var(--spacing-sm);
     }
 
     /* Videos */
@@ -597,7 +601,7 @@ table{
 
     /* Body padding */
     .body{
-        padding-left: 24px;
+        padding-left: var(--spacing-sm);
         padding-right: 0px;
     }
     
