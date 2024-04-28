@@ -402,7 +402,7 @@ table{
 
 /* --Responsiveness-- */
 
-/* Breakpoint 1550 */
+/* Breakpoint 1550 (md) */
 @media screen and (max-width: 1550px){
 
     /* Affix nav */
@@ -443,7 +443,7 @@ table{
 
 }
 
-/* Breakpoint 1070px */
+/* Breakpoint 1070px (md) */
 @media screen and (max-width: 1070px){
 
     /* Navbar */
@@ -471,7 +471,7 @@ table{
     }
 }
 
-/* Breakpoint 910 */
+/* Breakpoint 910 (sm)*/
 @media screen and (max-width: 910px){
 
     /* Affix nav */
@@ -502,7 +502,7 @@ table{
     }
 }
 
-/* Breakpoint 750px */
+/* Breakpoint 750px (sm)*/
 @media screen and (max-width: 750px){
 
     /* Videos */
@@ -529,7 +529,7 @@ table{
     }
 }
 
-/* Breakpoint 590px */
+/* Breakpoint 590px (sm)*/
 @media screen and (max-width: 590px){
     
     /* Navbar */
